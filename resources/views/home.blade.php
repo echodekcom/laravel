@@ -5,20 +5,13 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">เกี่ยวกับเรา</div>
+                <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    <h3>{{$n}}</h3>
-                    <small>{{$nc}}</small>
+                    You are logged in!
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
-
-@section('footer')
-  <script>
-    alert("Hi Dekcom !");
-  </script>
 @endsection
