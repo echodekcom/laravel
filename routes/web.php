@@ -15,6 +15,8 @@ Route::get('about','SiteController@index');
 Route::get('typebooks','TypebooksController@index');
 Route::get('typebooks/destroy/{id}','TypebooksController@destroy');
 
+Route::resource('books','BooksController');
+
 Route::get('/', function () {
     return view('welcome');
 });
