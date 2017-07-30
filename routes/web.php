@@ -12,6 +12,9 @@
 */
 Route::get('about','SiteController@index');
 
+Route::get('typebooks','TypebooksController@index');
+Route::get('typebooks/destroy/{id}','TypebooksController@destroy');
+
 Route::get('/', function () {
     return view('welcome');
 });
