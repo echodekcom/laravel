@@ -5,6 +5,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <?= link_to('books/create', $title = 'เพิ่มข้อมูล', ['class' => 'btn btn-primary'], $secure = null); ?>
       <hr>
       <div class="panel panel-default">
         <div class="panel-heading">
