@@ -8,6 +8,17 @@
         <div class="panel-heading">
           เพิ่มข้อมูลหนังสือ
         </div>
+
+        @if(count($errors)>0)
+        <div class="alert alert-warning">
+          <ul>
+            @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif
+
         <div class="panel-body">
 
           {!! Form::open(array('url' => 'books','files' => true)) !!}
