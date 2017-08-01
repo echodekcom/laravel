@@ -26,7 +26,7 @@
               <td>{{$book->title}}</td>
               <td>{{number_format($book->price,2)}}</td>
               <td>{{$book->typebooks->name}}</td>
-              <td><a href="{{ asset('images/'.$book->image)}}"><img src="{{ asset('images/'.$book->image) }}" style="width:50px;"></a></td>
+              <td><a href="{{ asset('images/'.$book->image)}}"><img src="{{ asset('images/resize/'.$book->image) }}" style="width:50px;"></a></td>
             </tr>
             @endforeach
           </table>

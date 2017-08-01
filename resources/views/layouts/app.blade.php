@@ -43,10 +43,10 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        <li><a href="{{ url('/books') }}">Books</a></a></li>
+                        <li><a href="{{ url('/typebooks') }}">Type Books</a></a></li>
+                        <li><a href="{{ url('/about') }}">About Us</a></li>
                         @if (Auth::guest())
-                            <li><a href="{{ url('/books') }}">Books</a></a></li>
-                            <li><a href="{{ url('/typebooks') }}">Type Books</a></a></li>
-                            <li><a href="{{ url('/about') }}">About Us</a></li>
                             <li><a href="{{ url('login') }}">Login</a></li>
                             <li><a href="{{ url('register') }}">Register</a></li>
                         @else
